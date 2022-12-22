@@ -1,0 +1,14 @@
+Cycles.o: Cycles.cc Cycles.h Initialize.h Util.h
+Util.o: Util.cc Util.h
+GeneratedCode.o: testHelper/GeneratedCode.cc NanoLog.h \
+ namespaceRedefines.h RuntimeLogger.h Config.h Common.h Fence.h Log.h \
+ Cycles.h Packer.h TestUtil.h Util.h NanoLog.h Packer.h
+Log.o: Log.cc namespaceRedefines.h Log.h Config.h Common.h Cycles.h \
+ Packer.h TestUtil.h Util.h GeneratedCode.h NanoLog.h RuntimeLogger.h \
+ Fence.h
+NanoLog.o: NanoLog.cc NanoLog.h namespaceRedefines.h RuntimeLogger.h \
+ Config.h Common.h Fence.h Log.h Cycles.h Packer.h TestUtil.h Util.h
+RuntimeLogger.o: RuntimeLogger.cc namespaceRedefines.h Cycles.h \
+ RuntimeLogger.h Config.h Common.h Fence.h Log.h Packer.h TestUtil.h \
+ Util.h NanoLog.h
+TimeTrace.o: TimeTrace.cc TimeTrace.h Atomic.h Cycles.h
